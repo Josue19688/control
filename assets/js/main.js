@@ -268,27 +268,7 @@
 
 })();
 
-$(window).ready(function () {
-  $('#magazine').turn({
-    width: 1100,
-    height: 650,
-    autoCenter: true,
-    acceleration: true,
-    elevation: 50,
-    when: {
-      turned: function (e, page) {
-        console.log('Current view: ', $(this).turn('view'));
-      }
-    }
-  });
-});
 
 
-$(window).bind('keydown', function (e) {
 
-  if (e.keyCode == 37)
-    $('#magazine').turn('previous');
-  else if (e.keyCode == 39)
-    $('#magazine').turn('next');
 
-});
